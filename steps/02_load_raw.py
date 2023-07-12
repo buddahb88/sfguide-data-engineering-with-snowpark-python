@@ -68,9 +68,12 @@ def validate_raw_tables(session):
 if __name__ == "__main__":
     # Add the utils package to our path and import the snowpark_utils function
     import os, sys
-    current_dir = os.getcwd()
-    parent_dir = os.path.dirname(current_dir)
-    sys.path.append(parent_dir)
+    # current_dir = os.getcwd()
+    # parent_dir = os.path.dirname(current_dir)
+    # print(parent_dir)
+    # sys.path.append(parent_dir)
+
+    sys.path.append(r'C:\Users\JamieBare\Desktop\SnowParkProj\sfguide-data-engineering-with-snowpark-python')
 
     from utils import snowpark_utils
     session = snowpark_utils.get_snowpark_session()
